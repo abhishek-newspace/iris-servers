@@ -1,0 +1,29 @@
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.4.5
+    container_name: keycloak
+    restart: unless-stopped
+    command:
+      - start
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://dev-iris-postgres.postgres.database.azure.com:5432/postgres?sslmode=require
+      KC_DB_USERNAME: pgadmin
+      KC_DB_PASSWORD: 12345
+      KC_DB_SCHEMA: keycloak
+
+      # KC_HOSTNAME: dev.keycloak.avinyarobotics.com
+      # KC_HOSTNAME: keycloak-iris.duckdns.org
+      KC_HOSTNAME: localhost
+      # KC_HOSTNAME_STRICT: "false"
+      KC_HTTP_ENABLED: "true"
+      KC_PROXY: edge
+
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin123
+
+    ports:
+      - "8081:8080"
+
+    volumes:
+      - /home/avionics/IRIS_OTA/keycloak/keycloak/keycloak/keycloak:/opt/keycloak/themes:ro

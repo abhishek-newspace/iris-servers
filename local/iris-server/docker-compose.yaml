@@ -1,0 +1,236 @@
+services:
+
+  # -------------------------------------------------
+  # MQTT BROKER: Mosquitto (mTLS enabled)
+  # -------------------------------------------------
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    restart: unless-stopped
+    ports:
+      - "8883:8883"
+      - "9001:9001"
+    volumes:
+      - ./infra/mosquitto/config:/mosquitto/config
+      - ./infra/mosquitto/certs:/mosquitto/certs:ro
+      - ./infra/mosquitto/data:/mosquitto/data
+    environment:
+      - TZ=Asia/Kolkata
+    entrypoint: []
+    command: ["mosquitto", "-c", "/mosquitto/config/mosquitto.conf"]
+    networks:
+      - iris
+
+  # -------------------------------------------------
+  # FASTAPI BACKEND (Your pushed image)
+  # -------------------------------------------------
+  api-service:
+    build:
+      context: C:\Users\Abhishek.Kumar\Desktop\Iris-newspace\iris\iris_backend  # <---- Path to your Dockerfile directory
+      dockerfile: Dockerfile  # Optional if it's named Dockerfile
+    container_name: api-service
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./certs:/app/certs        # Persist robot certs
+      - ./db:/app/db              # Persist DB (if SQLite or cert DB)
+      - ./ota_packages:/app/ota_packages
+    depends_on:
+      mosquitto:
+        condition: service_started
+      keycloak:
+        condition: service_started
+    networks:
+      - iris
+
+  # -------------------------------------------------
+  # BACKGROUND WORKER (ARQ)
+  # -------------------------------------------------
+  # worker:
+  #   image: abhishekredant/api-server:latest   # same image as api-service
+  #   container_name: worker
+  #   command: arq app.core.worker.settings.WorkerSettings
+  #   restart: unless-stopped
+  #   env_file:
+  #     - .env
+  #   depends_on:
+  #     - db
+  #     - redis
+  #   volumes:
+  #     - ./certs:/app/certs
+  #     - ./db:/app/db
+  #   networks:
+  #     - iris
+
+
+  # -------------------------------------------------
+  # REDIS CACHE + QUEUE
+  # -------------------------------------------------
+  # redis:
+  #   image: redis:alpine
+  #   container_name: redis
+  #   restart: unless-stopped
+  #   volumes:
+  #     - redis-data:/data
+  #   networks:
+  #     - iris
+
+
+  # -------------------------------------------------
+  # KEYCLOAK
+  # -------------------------------------------------
+  # keycloak:
+  #   image: quay.io/keycloak/keycloak:26.4.5
+  #   container_name: keycloak
+  #   restart: unless-stopped
+
+  #   # Run in development mode for local use (allows HTTP and ignores strict hostnames)
+  #   command: start-dev
+
+  #   environment:
+  #     KC_DB: postgres
+  #     KC_DB_URL: jdbc:postgresql://dev-iris-postgres.postgres.database.azure.com:5432/postgres?sslmode=require
+  #     KC_DB_USERNAME: pgadmin
+  #     KC_DB_PASSWORD: "12345"
+  #     KC_DB_SCHEMA: keycloak
+
+  #     # Initial admin login
+  #     KC_BOOTSTRAP_ADMIN_USERNAME: admin
+  #     KC_BOOTSTRAP_ADMIN_PASSWORD: admin123
+
+  #   ports:
+  #     - "8080:8080"
+
+  #   volumes:
+  #     # Update the left side to point to your local themes folder
+  #     - ./themes:/opt/keycloak/themes:ro
+  #     - ./iris-theme-builder/my-theme-output:/opt/keycloak/themes
+  #   networks:
+  #     - iris
+
+  # Remote db
+  # keycloak:
+  #   image: quay.io/keycloak/keycloak:26.4.5
+  #   container_name: keycloak
+  #   restart: unless-stopped
+
+  #   # Run in development mode for local use (allows HTTP and ignores strict hostnames)
+  #   command: start-dev
+
+  #   environment:
+  #     KC_DB: postgres
+  #     KC_DB_URL: jdbc:postgresql://10.10.60.225:5432/iris_db
+  #     KC_DB_USERNAME: admin_user
+  #     KC_DB_PASSWORD: "12345678"
+  #     KC_DB_SCHEMA: keycloak
+
+  #     # Initial admin login
+  #     KC_BOOTSTRAP_ADMIN_USERNAME: admin
+  #     KC_BOOTSTRAP_ADMIN_PASSWORD: admin123
+
+  #   ports:
+  #     - "8080:8080"
+
+  #   volumes:
+  #     - ./iris-theme-builder/my-theme-output:/opt/keycloak/themes
+  #   networks:
+  #     - iris
+
+  # Local db
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.4.5
+    container_name: keycloak
+    restart: unless-stopped
+    command: start-dev
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://host.docker.internal:5432/postgres
+      
+      KC_DB_USERNAME: postgres      
+      KC_DB_PASSWORD: "12345"      
+      KC_DB_SCHEMA: keycloak
+
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin123
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./iris-theme-builder/my-theme-output:/opt/keycloak/themes
+    networks:
+      - iris
+      
+  # -------------------------------------------------
+  # LOKI LOGS
+  # -------------------------------------------------
+  loki:
+    image: grafana/loki:2.9.3
+    container_name: loki
+    restart: unless-stopped
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/config.yaml
+    volumes:
+      - ./loki-config.yaml:/etc/loki/config.yaml:ro
+      - loki_data:/loki
+    networks:
+      - iris
+
+
+  # -------------------------------------------------
+  # GRAFANA DASHBOARDS
+  # -------------------------------------------------
+  grafana:
+    image: grafana/grafana:10.2.3
+    container_name: grafana
+    user: "472:472"
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana_data:/var/lib/grafana
+      - ./grafana_dash:/etc/grafana/provisioning:ro
+    networks:
+      - iris
+
+
+# Local Registry
+  registry:
+    image: registry:2
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /var/lib/registry
+    volumes:
+      # This maps your local Windows folder to the container's storage
+      - ./data:/var/lib/registry
+      
+
+# -------------------------------------------------
+# VOLUMES
+# -------------------------------------------------
+volumes:
+  mosquitto_data:
+  redis-data:
+  postgres-data:
+  pgadmin-data:
+  loki_data:
+  grafana_data:
+
+# -------------------------------------------------
+# NETWORK
+# -------------------------------------------------
+networks:
+  iris:
+    name: iris
+    driver: bridge

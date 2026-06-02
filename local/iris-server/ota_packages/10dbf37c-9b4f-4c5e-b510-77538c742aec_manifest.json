@@ -1,0 +1,26 @@
+{
+  "package_id": "10dbf37c-9b4f-4c5e-b510-77538c742aec",
+  "package_name": "UGV_Composite_Update_v1.2",
+  "created_at": "2026-01-22T18:34:11.457392Z",
+  "package_checksum": "263b656f6ab9c13a62fac21a23a12cfef9007324e531f6c6f21c96f9903bdf5a",
+  "firmwares": [
+    {
+      "install_order": 1,
+      "firmware_id": "5531788f-bd19-499b-9bb0-fec342308828",
+      "name": "UGV-T40 Motor & Lidar v1.2.10",
+      "version": "v1.2.10",
+      "image": "registry.example.com/ugv-t40/firmware@3a5f6c8d9e7bf234567890abcdef1234567890abcdef1234567890abcdef1234",
+      "digest": "3a5f6c8d9e7bf234567890abcdef1234567890abcdef1234567890abcdef1234",
+      "is_mandatory": true
+    },
+    {
+      "install_order": 2,
+      "firmware_id": "6a8280ee-1742-469b-8004-36669f869b8a",
+      "name": "Alfred Firmware v2.1",
+      "version": "v2.3",
+      "image": "/firmware/UGV-T40/v1.2.4/fw.bin@3a5f6c8d9e7bf234567890abcdef1234567890abcdef1234567890abcdef1235",
+      "digest": "3a5f6c8d9e7bf234567890abcdef1234567890abcdef1234567890abcdef1235",
+      "is_mandatory": true
+    }
+  ]
+}

@@ -1,0 +1,1183 @@
+{
+  "robots": {
+    "robot": [
+      {
+        "serial_number": "395866633730455839700117276405350902488316717724",
+        "issued_at": "2026-01-26T19:07:35.188351+00:00",
+        "expires_at": "2026-01-27T19:07:35+00:00",
+        "cert_path": "/pki/issued/robots/robot.cert.pem",
+        "status": "active"
+      }
+    ],
+    "robot01": [
+      {
+        "serial_number": "574196309596040513978292391775109545372927368611",
+        "issued_at": "2026-01-26T19:08:22.759405+00:00",
+        "expires_at": "2026-01-27T19:08:22+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "38533268887025450287842129060987770285956543871",
+        "issued_at": "2026-01-26T21:22:04.590125+00:00",
+        "expires_at": "2026-01-27T21:22:04+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "558461121427289900886867775273786536988671107882",
+        "issued_at": "2026-01-28T05:37:13.550355+00:00",
+        "expires_at": "2026-01-29T05:37:13+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "331803818555231610171513955182136576303730726385",
+        "issued_at": "2026-02-06T03:59:30.141026+00:00",
+        "expires_at": "2026-02-07T03:52:50+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "617807129805267737134401646240625213529488158756",
+        "issued_at": "2026-02-11T09:21:10.593155+00:00",
+        "expires_at": "2026-05-21T22:14:30+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "320950552303969120028352009616161206255943298159",
+        "issued_at": "2026-02-11T10:26:53.202699+00:00",
+        "expires_at": "2026-05-21T23:20:13+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "145423534787557872214435187359257586875020371331",
+        "issued_at": "2026-03-10T03:47:17.172917+00:00",
+        "expires_at": "2026-03-20T03:47:17+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "587880286811595102568955339168091464535078013758",
+        "issued_at": "2026-03-10T05:25:44.799275+00:00",
+        "expires_at": "2026-03-20T05:25:44+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "2809456278029473771494982021574315959207110298",
+        "issued_at": "2026-03-11T04:39:42.415226+00:00",
+        "expires_at": "2026-06-19T04:39:42+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "652664930585466639720882628363880376289409001480",
+        "issued_at": "2026-03-11T04:58:30.418760+00:00",
+        "expires_at": "2026-06-19T04:58:30+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "382209083293042023684822163041187554596510458133",
+        "issued_at": "2026-03-11T05:13:47.919869+00:00",
+        "expires_at": "2026-06-19T05:13:47+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "44134915505657678581859289683327348918696638296",
+        "issued_at": "2026-03-11T05:48:03.847700+00:00",
+        "expires_at": "2026-06-19T05:48:03+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "499280262081470694042153608805941498742318352123",
+        "issued_at": "2026-03-11T06:36:57.290112+00:00",
+        "expires_at": "2026-06-19T06:36:57+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "383282909810094140974655134971412185575554600791",
+        "issued_at": "2026-03-11T07:13:48.309561+00:00",
+        "expires_at": "2026-06-19T07:13:48+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "524855659403472589341186784758331558276250219385",
+        "issued_at": "2026-03-11T07:53:32.268561+00:00",
+        "expires_at": "2026-06-19T07:53:32+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "687348892688574137247371587558124509332950928354",
+        "issued_at": "2026-03-11T07:56:39.684189+00:00",
+        "expires_at": "2026-06-19T07:56:39+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "261423384934851006930072495562481761079835632677",
+        "issued_at": "2026-03-23T04:02:01.557652+00:00",
+        "expires_at": "2026-04-02T04:02:01+00:00",
+        "cert_path": "/pki/issued/robots/robot01.cert.pem",
+        "status": "active"
+      }
+    ],
+    "e5a92ea5a2bfe799": [
+      {
+        "serial_number": "464171173492497527046517788103977406695370496612",
+        "issued_at": "2026-01-27T06:34:08.951171+00:00",
+        "expires_at": "2026-01-27T07:04:08+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "593802156735836896958043540350009540621610404278",
+        "issued_at": "2026-01-27T07:27:18.661057+00:00",
+        "expires_at": "2026-01-27T07:57:18+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "654975580666636015654075337346367647072671896493",
+        "issued_at": "2026-01-27T07:35:53.133809+00:00",
+        "expires_at": "2026-01-27T08:05:53+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "361718392371350087604707905861793220069218877430",
+        "issued_at": "2026-01-27T08:02:25.752411+00:00",
+        "expires_at": "2026-01-27T08:32:25+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "524778031986387007169178677055373075753908369501",
+        "issued_at": "2026-01-27T08:10:01.172700+00:00",
+        "expires_at": "2026-01-27T08:40:01+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "533514193070829948248864304616332378271218186610",
+        "issued_at": "2026-01-27T08:14:30.345371+00:00",
+        "expires_at": "2026-01-27T08:44:30+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "10019225449946779739050394269897096054976407984",
+        "issued_at": "2026-01-27T08:25:57.268701+00:00",
+        "expires_at": "2026-01-27T08:55:57+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "619455459612263257202593215380696713009628303438",
+        "issued_at": "2026-01-27T08:31:10.668247+00:00",
+        "expires_at": "2026-01-27T09:01:10+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "11709573994643887956383189625045309673478842934",
+        "issued_at": "2026-01-27T08:36:53.914619+00:00",
+        "expires_at": "2026-01-27T09:06:53+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "302734229467936967019942571767744266778964008203",
+        "issued_at": "2026-01-27T08:41:01.541067+00:00",
+        "expires_at": "2026-01-27T09:11:01+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "33602477779158170047081325153015395976603048737",
+        "issued_at": "2026-01-27T09:39:45.696177+00:00",
+        "expires_at": "2026-01-27T10:09:45+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "394250406481378401228443027428757541182930520320",
+        "issued_at": "2026-01-27T10:16:31.064510+00:00",
+        "expires_at": "2026-01-27T10:46:31+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "527382750999456336316153838085719646606532161522",
+        "issued_at": "2026-01-27T10:19:51.986300+00:00",
+        "expires_at": "2026-01-27T10:49:51+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "128235856507505621865602887247424966579449052616",
+        "issued_at": "2026-01-27T10:29:59.196107+00:00",
+        "expires_at": "2026-01-27T10:59:59+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "136684593848686385897966922689641101232501643429",
+        "issued_at": "2026-01-28T06:57:33.481439+00:00",
+        "expires_at": "2026-01-28T07:00:33+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "718153382821227964536130858007888575429065628477",
+        "issued_at": "2026-01-28T09:45:43.324158+00:00",
+        "expires_at": "2026-01-28T09:48:43+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "604973426490579622991840565941077734967954943989",
+        "issued_at": "2026-01-29T08:45:47.520576+00:00",
+        "expires_at": "2026-01-29T09:45:47+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "358858318450343635383174306441805106019224485556",
+        "issued_at": "2026-01-29T08:52:47.352741+00:00",
+        "expires_at": "2026-01-29T09:52:47+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "484523257315442051416872669618382330793275380029",
+        "issued_at": "2026-01-29T08:59:18.715851+00:00",
+        "expires_at": "2026-01-29T09:59:18+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "633742860156680927278844065126191517465792108534",
+        "issued_at": "2026-01-29T09:02:02.219989+00:00",
+        "expires_at": "2026-01-29T10:02:02+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "667664692847132536137039783756045759905128620551",
+        "issued_at": "2026-03-10T04:19:59.293630+00:00",
+        "expires_at": "2026-03-20T04:19:59+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "5462428266373351884583546917551553495747764527",
+        "issued_at": "2026-03-11T07:06:47.902966+00:00",
+        "expires_at": "2026-03-13T07:06:47+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "383843627127028815107165355772728121062793388893",
+        "issued_at": "2026-03-11T07:07:24.210597+00:00",
+        "expires_at": "2026-03-13T07:07:24+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe799.cert.pem",
+        "status": "active"
+      }
+    ],
+    "bootstrap": [
+      {
+        "serial_number": "333100640362513187077088708183206101600258646819",
+        "issued_at": "2026-03-10T05:24:52.590199+00:00",
+        "expires_at": "2026-03-20T05:24:52+00:00",
+        "cert_path": "/pki/issued/robots/bootstrap.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "587384881532608924193301464471564185605138969968",
+        "issued_at": "2026-03-23T11:47:27.787625+00:00",
+        "expires_at": "2026-04-02T11:47:27+00:00",
+        "cert_path": "/pki/issued/robots/bootstrap.cert.pem",
+        "status": "active"
+      }
+    ],
+    "3b8d14f9a2c6e705": [
+      {
+        "serial_number": "307487297400320762555541699597061207753829570453",
+        "issued_at": "2026-03-23T04:02:18.980279+00:00",
+        "expires_at": "2026-04-02T04:02:18+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "454801036084307704463927453634702535782071516807",
+        "issued_at": "2026-03-23T04:41:52.114416+00:00",
+        "expires_at": "2026-03-25T04:41:52+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "371446206064540710432335883234023944528907550719",
+        "issued_at": "2026-03-23T11:49:29.083476+00:00",
+        "expires_at": "2026-04-02T11:49:29+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "108287019540886409180649087830497538151089803934",
+        "issued_at": "2026-03-23T11:53:37.036621+00:00",
+        "expires_at": "2026-03-25T11:53:36+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "23689018958144487869001505791943937035426052695",
+        "issued_at": "2026-03-23T11:54:50.316457+00:00",
+        "expires_at": "2026-03-25T11:54:50+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "438898496831827608382236205241880133303781761574",
+        "issued_at": "2026-03-24T03:52:56.305462+00:00",
+        "expires_at": "2026-04-03T03:52:56+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "268065042924485106773034799655141321967525799135",
+        "issued_at": "2026-03-24T04:02:13.599484+00:00",
+        "expires_at": "2026-04-03T04:02:13+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "589532912895637122001524776770777534650209547753",
+        "issued_at": "2026-03-24T04:05:59.969703+00:00",
+        "expires_at": "2026-03-26T04:05:59+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "238313905739604966322925847919583713425515345372",
+        "issued_at": "2026-03-24T04:27:53.989192+00:00",
+        "expires_at": "2026-04-03T04:27:53+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "191129826220786096022976526244241801594786558549",
+        "issued_at": "2026-03-24T04:36:33.199036+00:00",
+        "expires_at": "2026-03-26T04:36:33+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "292663073143987654164604954122386433363438008270",
+        "issued_at": "2026-03-24T04:54:29.964596+00:00",
+        "expires_at": "2026-04-03T04:54:29+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "577138537721318315166707835847042602667314899685",
+        "issued_at": "2026-03-24T04:57:40.437530+00:00",
+        "expires_at": "2026-03-26T04:57:40+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "664518218139504351772892962966345031210082920913",
+        "issued_at": "2026-03-24T05:05:09.967713+00:00",
+        "expires_at": "2026-04-03T05:05:09+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "37334992961056209513709589009213232467278012009",
+        "issued_at": "2026-03-24T05:08:56.337645+00:00",
+        "expires_at": "2026-03-26T05:08:56+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "93603398716205248592189337725959905635888734335",
+        "issued_at": "2026-03-24T05:20:28.447026+00:00",
+        "expires_at": "2026-04-03T05:20:28+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "619866087810041335495851632461872867886151118514",
+        "issued_at": "2026-03-24T05:22:37.378821+00:00",
+        "expires_at": "2026-03-26T05:22:37+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "311909411855059083267694178104505737652393948719",
+        "issued_at": "2026-03-24T05:24:59.256717+00:00",
+        "expires_at": "2026-04-03T05:24:59+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "540113080670377018998026064319281403095065779246",
+        "issued_at": "2026-03-24T05:26:31.621016+00:00",
+        "expires_at": "2026-03-26T05:26:31+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "346631338261369454021232157676642525908594661724",
+        "issued_at": "2026-03-24T05:27:57.614391+00:00",
+        "expires_at": "2026-04-03T05:27:57+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "172320698812509061625033698082762464624924518226",
+        "issued_at": "2026-03-24T05:29:14.857262+00:00",
+        "expires_at": "2026-03-26T05:29:14+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "118062740339800807952430472912909398687253184392",
+        "issued_at": "2026-03-24T05:30:33.274752+00:00",
+        "expires_at": "2026-03-26T05:30:33+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "726042728633599344626675155030687834717349186030",
+        "issued_at": "2026-03-24T05:32:35.997250+00:00",
+        "expires_at": "2026-04-03T05:32:35+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "539370861172769864269854551789058343301799734098",
+        "issued_at": "2026-03-24T05:36:06.038165+00:00",
+        "expires_at": "2026-03-26T05:36:06+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "497018950712832903712043641070737503964878678936",
+        "issued_at": "2026-03-24T05:39:22.851930+00:00",
+        "expires_at": "2026-04-03T05:39:22+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "222141270807866109874173781906460540989265730102",
+        "issued_at": "2026-03-24T05:40:45.402494+00:00",
+        "expires_at": "2026-03-26T05:40:45+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "478830246609168665995655632441255983055305592092",
+        "issued_at": "2026-03-24T05:45:47.536567+00:00",
+        "expires_at": "2026-04-03T05:45:47+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "333001022303564933068930336192358297864413513360",
+        "issued_at": "2026-03-24T05:53:54.327183+00:00",
+        "expires_at": "2026-03-26T05:53:54+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "59795234250785863944540439203132758263162264909",
+        "issued_at": "2026-03-24T05:54:32.640364+00:00",
+        "expires_at": "2026-03-26T05:54:32+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "147954893440662690076133295344184634264650647756",
+        "issued_at": "2026-03-24T05:59:18.270312+00:00",
+        "expires_at": "2026-04-03T05:59:18+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "569112762374191673211821131660716711190860434766",
+        "issued_at": "2026-03-24T06:03:45.319038+00:00",
+        "expires_at": "2026-04-03T06:03:45+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "17057943115114265223066913983559348723866351979",
+        "issued_at": "2026-03-24T06:05:40.919141+00:00",
+        "expires_at": "2026-03-26T06:05:40+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "171846184840243945718341033159857931712254365024",
+        "issued_at": "2026-03-24T06:08:35.141921+00:00",
+        "expires_at": "2026-04-03T06:08:35+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "55403312105593056727052279813548188526038730327",
+        "issued_at": "2026-03-24T06:12:04.848376+00:00",
+        "expires_at": "2026-04-03T06:12:04+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "35277573009651991877370554178612079560029694298",
+        "issued_at": "2026-03-24T06:16:06.118295+00:00",
+        "expires_at": "2026-03-26T06:16:06+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "485962842848020405190266499849268557546554711288",
+        "issued_at": "2026-03-24T06:22:32.100087+00:00",
+        "expires_at": "2026-04-03T06:22:32+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "264114487698536684045524591959685274582756528112",
+        "issued_at": "2026-03-24T07:28:43.905366+00:00",
+        "expires_at": "2026-04-03T07:28:43+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "453856812214611857291076837034323465832016112330",
+        "issued_at": "2026-03-24T07:30:00.515297+00:00",
+        "expires_at": "2026-03-26T07:30:00+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "639783295860657504458960978026720877939044946200",
+        "issued_at": "2026-03-24T07:35:18.581378+00:00",
+        "expires_at": "2026-04-03T07:35:18+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "100877354481767497868470935663638944107997221490",
+        "issued_at": "2026-03-24T07:48:12.501953+00:00",
+        "expires_at": "2026-03-26T07:48:12+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "598998590786804078360414888647636698746111014633",
+        "issued_at": "2026-03-24T07:50:12.928648+00:00",
+        "expires_at": "2026-04-03T07:50:12+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "328364516248689489026780147293908328811774486745",
+        "issued_at": "2026-03-24T07:53:41.248416+00:00",
+        "expires_at": "2026-03-26T07:53:41+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "86028758161444848607441036323983740629401384136",
+        "issued_at": "2026-03-24T07:54:45.513393+00:00",
+        "expires_at": "2026-03-26T07:54:45+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "684306008083901912150137390055670971701903697369",
+        "issued_at": "2026-03-24T07:56:34.678629+00:00",
+        "expires_at": "2026-03-26T07:56:34+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "66548672659323043054968341785684288235931242572",
+        "issued_at": "2026-03-24T08:00:42.287600+00:00",
+        "expires_at": "2026-04-03T08:00:42+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "663414319560943517756772237156980045919673585856",
+        "issued_at": "2026-03-24T08:05:45.099091+00:00",
+        "expires_at": "2026-03-26T08:05:45+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "94147430675857991104306563430262299444879639717",
+        "issued_at": "2026-03-24T08:12:23.626188+00:00",
+        "expires_at": "2026-04-03T08:12:23+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "437997655143329403134462729352712526519693397262",
+        "issued_at": "2026-03-24T08:22:26.442845+00:00",
+        "expires_at": "2026-03-26T08:22:26+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "199137132873617911038032012027738479999659756107",
+        "issued_at": "2026-03-24T08:23:55.098284+00:00",
+        "expires_at": "2026-04-03T08:23:55+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "720169485136123763076396579766230755960960447541",
+        "issued_at": "2026-03-24T08:26:23.075045+00:00",
+        "expires_at": "2026-03-26T08:26:22+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "640925897810869454085515509650262427657780352977",
+        "issued_at": "2026-03-24T08:29:26.545416+00:00",
+        "expires_at": "2026-04-03T08:29:26+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "299845768012105470222742237092079829569896182538",
+        "issued_at": "2026-03-24T08:31:44.643944+00:00",
+        "expires_at": "2026-03-26T08:31:44+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "105602294836598749734124073397139388856307161627",
+        "issued_at": "2026-03-24T08:34:38.683151+00:00",
+        "expires_at": "2026-04-03T08:34:38+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "113340787226264854629327946310688498742186789050",
+        "issued_at": "2026-03-24T08:37:16.875115+00:00",
+        "expires_at": "2026-03-26T08:37:16+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "267854481249795183275486195390413753754219418962",
+        "issued_at": "2026-03-24T08:38:36.814028+00:00",
+        "expires_at": "2026-04-03T08:38:36+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "554708582060937644182951907494575945514275382560",
+        "issued_at": "2026-03-24T08:48:59.307658+00:00",
+        "expires_at": "2026-03-26T08:48:59+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "514427010553607409699811080081855218519220608068",
+        "issued_at": "2026-03-24T08:53:23.385661+00:00",
+        "expires_at": "2026-04-03T08:53:23+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "193439481659430101320041055247427111945120682467",
+        "issued_at": "2026-03-24T09:02:05.805866+00:00",
+        "expires_at": "2026-03-26T09:02:05+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "393292181511767059779398100052580083913555057722",
+        "issued_at": "2026-03-24T09:08:21.066575+00:00",
+        "expires_at": "2026-04-03T09:08:21+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "422848642139376235810974126974124410840121137446",
+        "issued_at": "2026-03-24T09:11:11.258305+00:00",
+        "expires_at": "2026-03-26T09:11:11+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "665313856091859192438874996029253610885374013006",
+        "issued_at": "2026-03-24T09:42:31.718511+00:00",
+        "expires_at": "2026-04-03T09:42:31+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "12308940317675487306005759502694430536204681678",
+        "issued_at": "2026-03-24T10:01:28.475859+00:00",
+        "expires_at": "2026-03-26T10:01:28+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "421662592000644082615758708654638942159939327894",
+        "issued_at": "2026-03-24T10:03:18.123091+00:00",
+        "expires_at": "2026-03-26T10:03:18+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "74160418952793855582697010267808164308650724307",
+        "issued_at": "2026-03-24T10:08:37.134138+00:00",
+        "expires_at": "2026-04-03T10:08:37+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "467247393317240204732620374993440257817374556223",
+        "issued_at": "2026-03-24T10:28:21.559141+00:00",
+        "expires_at": "2026-04-03T10:28:21+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "599702184274779900191417159568458985480989625787",
+        "issued_at": "2026-03-24T10:32:27.125147+00:00",
+        "expires_at": "2026-03-26T10:32:27+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "534858121892587339416447933301601435980886659858",
+        "issued_at": "2026-03-24T10:44:05.361072+00:00",
+        "expires_at": "2026-03-26T10:44:05+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "277867055695715955940123556334505523215703354191",
+        "issued_at": "2026-03-24T11:23:07.440766+00:00",
+        "expires_at": "2026-04-03T11:23:07+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "228493365529955822371054571204441217857708218461",
+        "issued_at": "2026-03-25T05:52:25.311683+00:00",
+        "expires_at": "2026-04-04T05:52:25+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "346935110036873248189706681650987497810589641183",
+        "issued_at": "2026-03-25T05:53:46.343193+00:00",
+        "expires_at": "2026-03-27T05:53:46+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "683035674040469844687231702892621073362658153642",
+        "issued_at": "2026-03-31T03:55:19.421156+00:00",
+        "expires_at": "2026-04-10T03:55:19+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "695557832483509897269257512955307064772197751224",
+        "issued_at": "2026-03-31T04:24:30.223442+00:00",
+        "expires_at": "2026-04-10T04:24:30+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "70552492159880532335135097996065507721267393043",
+        "issued_at": "2026-03-31T05:33:00.918757+00:00",
+        "expires_at": "2026-04-10T05:33:00+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "323550663764164844678844851923151735709572914902",
+        "issued_at": "2026-05-12T05:52:15.248232+00:00",
+        "expires_at": "2026-05-22T05:52:15+00:00",
+        "cert_path": "/pki/issued/robots/3b8d14f9a2c6e705.cert.pem",
+        "status": "active"
+      }
+    ],
+    "f6a92ea5a2bfe697": [
+      {
+        "serial_number": "549011054646409596161455057060755335194280860762",
+        "issued_at": "2026-03-24T09:24:44.646182+00:00",
+        "expires_at": "2026-04-03T09:24:44+00:00",
+        "cert_path": "/pki/issued/robots/f6a92ea5a2bfe697.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "266532821445974533177025001973847651390554298316",
+        "issued_at": "2026-03-24T09:28:24.076893+00:00",
+        "expires_at": "2026-03-26T09:28:24+00:00",
+        "cert_path": "/pki/issued/robots/f6a92ea5a2bfe697.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "613587308048068716091961095797811888337667639897",
+        "issued_at": "2026-03-24T09:41:49.682587+00:00",
+        "expires_at": "2026-04-03T09:41:49+00:00",
+        "cert_path": "/pki/issued/robots/f6a92ea5a2bfe697.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "488774903486545085471068308586429941442396076650",
+        "issued_at": "2026-03-24T10:03:40.823629+00:00",
+        "expires_at": "2026-03-26T10:03:40+00:00",
+        "cert_path": "/pki/issued/robots/f6a92ea5a2bfe697.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "182798917862172214493166243653192227124850105674",
+        "issued_at": "2026-03-24T10:05:03.289550+00:00",
+        "expires_at": "2026-03-26T10:05:03+00:00",
+        "cert_path": "/pki/issued/robots/f6a92ea5a2bfe697.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "498243938050276269325820897384603640592505500846",
+        "issued_at": "2026-03-24T11:32:25.139490+00:00",
+        "expires_at": "2026-03-26T11:32:25+00:00",
+        "cert_path": "/pki/issued/robots/f6a92ea5a2bfe697.cert.pem",
+        "status": "active"
+      }
+    ],
+    "e5a92ea5a2bfe793": [
+      {
+        "serial_number": "364982797595193083589376514832492051638306792068",
+        "issued_at": "2026-03-24T11:32:05.527273+00:00",
+        "expires_at": "2026-03-26T11:32:05+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe793.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "556452298189045847322575536621297124036286632125",
+        "issued_at": "2026-05-19T11:00:00.970834+00:00",
+        "expires_at": "2026-05-29T11:00:00+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe793.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "105779488360411702566784765798440090469725479284",
+        "issued_at": "2026-05-19T11:28:32.968806+00:00",
+        "expires_at": "2026-05-21T11:28:32+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe793.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "193973458567033441488197062787268263253352906192",
+        "issued_at": "2026-05-19T11:30:10.563168+00:00",
+        "expires_at": "2026-05-21T11:30:10+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe793.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "93225829480454395167182217228551034465219617948",
+        "issued_at": "2026-05-19T11:31:52.110363+00:00",
+        "expires_at": "2026-05-21T11:31:52+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe793.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "13853275807253868886446252761130185928062405023",
+        "issued_at": "2026-05-19T11:34:19.980489+00:00",
+        "expires_at": "2026-05-21T11:34:19+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe793.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "480124615117894394158651605781308181013778507326",
+        "issued_at": "2026-05-19T11:36:30.053932+00:00",
+        "expires_at": "2026-05-21T11:36:30+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe793.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "524790877666870386073614964431944725055430136684",
+        "issued_at": "2026-05-19T11:48:28.578984+00:00",
+        "expires_at": "2026-05-21T11:48:28+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe793.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "425737345930686664507635080856612239836282195044",
+        "issued_at": "2026-05-27T07:34:03.848595+00:00",
+        "expires_at": "2026-05-29T07:34:03+00:00",
+        "cert_path": "/pki/issued/robots/e5a92ea5a2bfe793.cert.pem",
+        "status": "active"
+      }
+    ]
+  },
+  "servers": {
+    "server": [
+      {
+        "serial_number": "304633905363015690842343077189406220152848047061",
+        "issued_at": "2026-01-26T18:49:24.105392+00:00",
+        "expires_at": "2026-01-27T18:49:24+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "714927163393459153374900145716252659954094344155",
+        "issued_at": "2026-01-27T05:38:17.418054+00:00",
+        "expires_at": "2026-01-28T05:38:17+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "202086094196249608936139150960154445144150104354",
+        "issued_at": "2026-01-28T04:09:08.667663+00:00",
+        "expires_at": "2026-01-29T04:09:08+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "425637557232382138346132700851892457553331322367",
+        "issued_at": "2026-01-30T04:05:34.243590+00:00",
+        "expires_at": "2026-01-31T04:05:34+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "198762296313914429422719830118964532748969121691",
+        "issued_at": "2026-02-03T09:14:17.850628+00:00",
+        "expires_at": "2026-02-04T09:14:17+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "56906954834102040356454907402290794604083269572",
+        "issued_at": "2026-02-03T09:37:06.448724+00:00",
+        "expires_at": "2026-03-05T09:37:06+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "476400246356982914004422106101150770308009861301",
+        "issued_at": "2026-02-11T09:31:03.698376+00:00",
+        "expires_at": "2026-02-21T08:24:23+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "503275490263974392662758933288466446177813751026",
+        "issued_at": "2026-02-11T10:26:07.105235+00:00",
+        "expires_at": "2026-05-21T23:19:27+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "243823752242061747785383171697190989646690386770",
+        "issued_at": "2026-03-09T06:14:57.259489+00:00",
+        "expires_at": "2026-03-19T06:14:57+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "465040567570411425608635714096722604126011705444",
+        "issued_at": "2026-03-13T11:40:10.698758+00:00",
+        "expires_at": "2028-12-07T11:40:10+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "12862714812520873288101302557670108217462019406",
+        "issued_at": "2026-03-23T03:55:40.077562+00:00",
+        "expires_at": "2026-04-02T03:55:40+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "146865536868571573801336766029050275822417624457",
+        "issued_at": "2026-04-10T03:54:49.223749+00:00",
+        "expires_at": "2053-08-26T03:54:49+00:00",
+        "cert_path": "/pki/issued/servers/server.cert.pem",
+        "status": "active"
+      }
+    ],
+    "admin": [
+      {
+        "serial_number": "443360298299340341836515229025104228919264968097",
+        "issued_at": "2026-03-10T10:38:05.957485+00:00",
+        "expires_at": "2026-03-20T10:38:05+00:00",
+        "cert_path": "/pki/issued/servers/admin.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "612339381082912633724639994916061172072053524688",
+        "issued_at": "2026-03-23T09:35:58.865586+00:00",
+        "expires_at": "2026-04-02T09:35:58+00:00",
+        "cert_path": "/pki/issued/servers/admin.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "268871549193025274619758929236736508466851094820",
+        "issued_at": "2026-03-23T10:00:43.675357+00:00",
+        "expires_at": "2026-04-02T10:00:43+00:00",
+        "cert_path": "/pki/issued/servers/admin.cert.pem",
+        "status": "active"
+      }
+    ]
+  },
+  "brokers": {
+    "broker": [
+      {
+        "serial_number": "708559521364562428471988203921059971150762525538",
+        "issued_at": "2026-01-26T18:50:06.908074+00:00",
+        "expires_at": "2026-01-27T18:50:06+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "329915154611319934843467193753449662629078359630",
+        "issued_at": "2026-01-27T05:41:23.061696+00:00",
+        "expires_at": "2026-01-28T05:41:23+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "475749253890032018794488920362586278113459055167",
+        "issued_at": "2026-01-27T07:59:51.719876+00:00",
+        "expires_at": "2026-01-28T07:59:51+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "388242286847280821975258326518748416812282268852",
+        "issued_at": "2026-01-28T03:31:59.531968+00:00",
+        "expires_at": "2026-01-29T03:31:59+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "14733041566017249976135482119929851083439247938",
+        "issued_at": "2026-01-28T03:33:56.480731+00:00",
+        "expires_at": "2026-01-29T03:33:56+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "144840621090758385756746371238974075298924842172",
+        "issued_at": "2026-01-28T03:41:25.954408+00:00",
+        "expires_at": "2026-01-29T03:41:25+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "598616625974381980328467594429571510985542057451",
+        "issued_at": "2026-01-28T04:48:47.176883+00:00",
+        "expires_at": "2026-01-29T04:48:47+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "456862268924748042330925097832877604088594618723",
+        "issued_at": "2026-01-29T10:03:38.724043+00:00",
+        "expires_at": "2026-01-29T11:03:38+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "539775572807797855713824043925564740000595667711",
+        "issued_at": "2026-01-30T03:17:28.864393+00:00",
+        "expires_at": "2026-01-31T03:17:28+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "157740098912148002745479493399327320278167149327",
+        "issued_at": "2026-01-30T04:00:11.161190+00:00",
+        "expires_at": "2026-01-31T04:00:11+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "376036685661051103114616920420120603852547677478",
+        "issued_at": "2026-02-03T09:10:44.408782+00:00",
+        "expires_at": "2026-02-04T09:10:44+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "355337610348999781553392267210774379500784913288",
+        "issued_at": "2026-02-03T09:38:11.089502+00:00",
+        "expires_at": "2026-03-05T09:38:11+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "391577350457484009279481663769571598666486233115",
+        "issued_at": "2026-02-11T09:25:00.674391+00:00",
+        "expires_at": "2026-05-21T22:18:20+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "126974105725783796960131056257334930139678271458",
+        "issued_at": "2026-02-11T10:00:51.891103+00:00",
+        "expires_at": "2026-05-21T22:54:11+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "206017546282792294442460875103737021407265536274",
+        "issued_at": "2026-02-11T10:27:51.233814+00:00",
+        "expires_at": "2026-02-21T09:21:11+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "113083391274285692381169558237970620539982825752",
+        "issued_at": "2026-03-09T06:18:22.856722+00:00",
+        "expires_at": "2026-03-19T06:18:22+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "162712650452308869141528642945931913468100044158",
+        "issued_at": "2026-03-23T03:52:09.278486+00:00",
+        "expires_at": "2026-04-02T03:52:09+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "396114466538122353043439966392311864645744897520",
+        "issued_at": "2026-04-10T03:50:24.859265+00:00",
+        "expires_at": "2029-01-04T03:50:24+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "inactive"
+      },
+      {
+        "serial_number": "586151171747041214309574212729272200003598474819",
+        "issued_at": "2026-05-18T09:45:52.093334+00:00",
+        "expires_at": "2026-06-27T09:45:52+00:00",
+        "cert_path": "/pki/issued/brokers/broker.cert.pem",
+        "status": "active"
+      }
+    ]
+  }
+}

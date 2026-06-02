@@ -1,0 +1,26 @@
+{
+  "package_id": "3083276f-67c8-40c1-85a6-653e13e2abaf",
+  "package_name": "ROS Navigation 2",
+  "created_at": "2026-03-09T17:32:11.435224Z",
+  "package_checksum": "25204441edc8016cdc3b8f728c28bce7c5478c7766d681e093ebd37bda118a72",
+  "firmwares": [
+    {
+      "install_order": 1,
+      "firmware_id": "fa91bf5b-d287-409b-815b-d17fdefb8093",
+      "name": "Scout TD2",
+      "version": "v2.0",
+      "image": "registry-1.docker.io/itstheabhiii1234/pki-server@b726ff0f3d02f4f7d0532aaf97a5ce4c468fcacf8281110b82b90c137d35a349",
+      "digest": "b726ff0f3d02f4f7d0532aaf97a5ce4c468fcacf8281110b82b90c137d35a349",
+      "is_mandatory": false
+    },
+    {
+      "install_order": 2,
+      "firmware_id": "54d00721-076c-49da-8449-a9b46a557fef",
+      "name": "Alfred TD1",
+      "version": "v2.0",
+      "image": "registry-1.docker.io/itstheabhiii1234/local-iris-backend@49ac22ab1810994ef566ca59e3cb0cc053f6cd4dc53d053e12c5cf0f0108fbd7",
+      "digest": "49ac22ab1810994ef566ca59e3cb0cc053f6cd4dc53d053e12c5cf0f0108fbd7",
+      "is_mandatory": false
+    }
+  ]
+}

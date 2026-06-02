@@ -1,0 +1,23 @@
+{{ define "telegram.message" }}
+{{ range .Alerts.Firing }}
+🚨 *ALERT FIRING*
+
+*{{ .Labels.alertname }}*
+
+{{ .Annotations.summary }}
+
+Device: `{{ .Labels.instance }}`
+Job: `{{ .Labels.job }}`
+Time: {{ .StartsAt.Format "Jan 02, 15:04" }}
+
+{{ if .Annotations.description }}
+{{ .Annotations.description }}
+{{ end }}
+
+🔗 {{ .GeneratorURL }}
+{{ end }}
+
+{{ range .Alerts.Resolved }}
+✅ *{{ .Labels.alertname }}* resolved
+{{ end }}
+{{ end }}

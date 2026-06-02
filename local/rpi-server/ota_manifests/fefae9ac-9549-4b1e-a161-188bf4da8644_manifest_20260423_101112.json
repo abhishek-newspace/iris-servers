@@ -1,0 +1,17 @@
+{
+  "package_id": "fefae9ac-9549-4b1e-a161-188bf4da8644",
+  "package_name": "Firmware_ROS_Package 2",
+  "created_at": "2026-04-23T09:22:27.610705Z",
+  "package_checksum": "4c11a32ad2b4e089a7d3617790398db9381085c2763c0b4f8fef10e2c662c616",
+  "firmwares": [
+    {
+      "install_order": 1,
+      "firmware_id": "d353dd21-451d-4575-89e7-6dc3e542d33b",
+      "name": "Battery UI",
+      "version": "v2.0.5",
+      "image": "itstheabhiii1234/ros-app:v1",
+      "digest": "fce2c01aca056959c07e14190b5ace2c97c947cbe9d6f34dab284e495af06b6a",
+      "is_mandatory": false
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+services:
+  # -------------------------------------------------
+  # MQTT BROKER: Mosquitto (mTLS enabled)
+  # -------------------------------------------------
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    restart: unless-stopped
+    ports:
+      - "8883:8883"
+      - "9001:9001"
+    volumes:
+      - ./iris_backend/infra/mosquitto/config:/mosquitto/config
+      - ./iris_backend/infra/mosquitto/certs:/mosquitto/certs:ro
+      - ./iris_backend/infra/mosquitto/data:/mosquitto/data
+    environment:
+      - TZ=Asia/Kolkata
+    command: ["mosquitto", "-c", "/mosquitto/config/mosquitto.conf"]
+    networks:
+      - iris
+
+  # -------------------------------------------------
+  # LOCAL POSTGRES DATABASE (Replaces Azure Hosted DB)
+  # -------------------------------------------------
+  postgres:
+    image: postgres:15-alpine  # Lightweight and reliable
+    container_name: iris_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: admin_user         
+      POSTGRES_PASSWORD: 12345678 
+      POSTGRES_DB: iris_db              
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin_user -d iris_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - iris
+
+  # -------------------------------------------------
+  # FASTAPI BACKEND SERVICE
+  # -------------------------------------------------
+  api-service:
+    image: localhost:5000/iris_backend:latest
+    container_name: api-service
+    restart: unless-stopped
+    env_file:
+      - ./iris_backend/.env
+    volumes:
+      - ./iris_backend/certs:/app/certs        
+      - ./iris_backend/db:/app/db              
+      - ./iris_backend/ota_packages:/app/ota_packages
+    depends_on:
+      mosquitto:
+        condition: service_started
+      keycloak:
+        condition: service_started
+      postgres:
+        condition: service_healthy
+    networks:
+      - iris
+
+  # -------------------------------------------------
+  # PKI SERVER (mTLS Authority Engine)
+  # -------------------------------------------------
+  pki-server:
+    image: localhost:5000/pki:latest
+    container_name: pki-server
+    user: "1000:1000"
+    environment:
+      PKI_BASE_PATH: /pki
+      PKI_PORT: 9000
+      ADMIN_API_KEYS: backend-secret-key,admin-secret-key
+      TZ: UTC
+    volumes:
+      - ./pki/pki-data:/pki
+    ports:
+      - "9000:9000"
+    restart: unless-stopped
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
+    networks:
+      - iris
+
+  # -------------------------------------------------
+  # KEYCLOAK IDENTITY PLATFORM (Routed Locally)
+  # -------------------------------------------------
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.4.5
+    container_name: keycloak
+    restart: unless-stopped
+    command:
+      - start
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://postgres:5432/iris_db
+      KC_DB_USERNAME: admin_user
+      KC_DB_PASSWORD: 12345678
+      KC_DB_SCHEMA: keycloak
+
+      KC_HOSTNAME: 10.10.60.250
+      KC_HOSTNAME_BACKCHANNEL_DYNAMIC: "false"
+      KC_HOSTNAME_STRICT: "true"
+      # Removed KC_HOSTNAME_STRICT_BACKCHANNEL to clear the V1 warning
+      
+      KC_HTTP_ENABLED: "true"
+      KC_PROXY_HEADERS: xforwarded
+      KC_HTTP_RELATIVE_PATH: /auth
+
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin123
+    networks:
+      - iris
+
+  # -------------------------------------------------
+  # IRIS REACT WEB FRONTEND
+  # -------------------------------------------------
+  frontend:
+    image: localhost:5000/iris_frontend:latest
+    container_name: iris-frontend
+    restart: unless-stopped
+    env_file:
+      - ./iris_frontend/.env
+    networks:
+      - iris
+
+  # -------------------------------------------------
+  # CENTRAL REVERSE PROXY EDGE GATEWAY (NGINX)
+  # -------------------------------------------------
+  gateway:
+    image: nginx:alpine
+    container_name: iris-gateway
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./infra/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./infra/nginx/certs:/etc/nginx/certs:ro
+    depends_on:
+      - frontend
+      - keycloak
+      - api-service
+    networks:
+      - iris
+
+# -------------------------------------------------
+# PERSISTENT STORAGE CAPTURES
+# -------------------------------------------------
+volumes:
+  mosquitto_data:
+  postgres-data:
+
+networks:
+  iris:
+    name: iris
+    driver: bridge

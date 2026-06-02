@@ -1,0 +1,26 @@
+{
+  "package_id": "a11b4f72-5693-42f0-99ad-ba9761f459f7",
+  "package_name": "Firmware_ROS_Package 1",
+  "created_at": "2026-03-16T10:54:01.475837Z",
+  "package_checksum": "d5fb190cb98c0dc0be04924da62a7e1bca6078589c074fbe03cc03f4769a4bf8",
+  "firmwares": [
+    {
+      "install_order": 1,
+      "firmware_id": "f443f011-a5ab-4571-b8f2-df91f58a6ba9",
+      "name": "AMR-Core-Safety",
+      "version": "v1.0.0",
+      "image": "itstheabhiii1234/iris-frontend:dev",
+      "digest": "a7d13ebf6f3617d1c9c95e67e06b6516a07f8eb431c2c5cfdb10bd82736482f0",
+      "is_mandatory": false
+    },
+    {
+      "install_order": 2,
+      "firmware_id": "7e5652be-afcc-45e3-9e3f-ae3f1f4f2540",
+      "name": "AMR-Nav-Lidar",
+      "version": "v1.0.0",
+      "image": "itstheabhiii1234/iris-backend:dev",
+      "digest": "0238fac841e614c2fda410db0782c431c5dffed5b8f86d34677e18a831c1a9a9",
+      "is_mandatory": false
+    }
+  ]
+}

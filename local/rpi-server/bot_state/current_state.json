@@ -1,0 +1,8 @@
+{
+    "helios": {
+        "name": "UGV-T40 Alfred",
+        "version": "v1.2.63",
+        "image": "itstheabhiii1234/ros-app:v2",
+        "updated_at": "2026-04-27T11:36:06.667477"
+    }
+}

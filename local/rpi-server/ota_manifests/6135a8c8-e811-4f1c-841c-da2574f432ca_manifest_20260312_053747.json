@@ -1,0 +1,26 @@
+{
+  "package_id": "6135a8c8-e811-4f1c-841c-da2574f432ca",
+  "package_name": "Hotfix-Navigation-2026-03-12",
+  "created_at": "2026-03-12T04:27:07.776556Z",
+  "package_checksum": "75546891da40d614f5858af18cb68ba2cc25d76f0deac8711fd11afb8a5fd24d",
+  "firmwares": [
+    {
+      "install_order": 1,
+      "firmware_id": "f443f011-a5ab-4571-b8f2-df91f58a6ba9",
+      "name": "AMR-Core-Safety",
+      "version": "v1.0.0",
+      "image": "itstheabhiii1234/pki-server@b726ff0f3d02f4f7d0532aaf97a5ce4c468fcacf8281110b82b90c137d35a349",
+      "digest": "b726ff0f3d02f4f7d0532aaf97a5ce4c468fcacf8281110b82b90c137d35a349",
+      "is_mandatory": false
+    },
+    {
+      "install_order": 2,
+      "firmware_id": "7e5652be-afcc-45e3-9e3f-ae3f1f4f2540",
+      "name": "AMR-Nav-Lidar",
+      "version": "v1.0.0",
+      "image": "itstheabhiii1234/local-iris-backend@30e25a93516370f54ee63580640f8ff45817c824391eeefcdd1ee95482ae0e66",
+      "digest": "30e25a93516370f54ee63580640f8ff45817c824391eeefcdd1ee95482ae0e66",
+      "is_mandatory": false
+    }
+  ]
+}

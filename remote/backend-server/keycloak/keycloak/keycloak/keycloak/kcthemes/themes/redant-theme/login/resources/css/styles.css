@@ -1,0 +1,78 @@
+/* Import Poppins from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Apply globally */
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background: url("../img/background.jpg") no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+/* Header */
+.login-pf-page-header {
+    font-size: xx-large !important;
+    font-weight: bold !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Card */
+.card-pf {
+    max-width: 380px !important;
+    margin: 60px auto !important;
+    padding: 10px !important;
+    border-radius: 12px !important;
+    background: rgba(255, 255, 255, 0.20) !important;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.3) !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Page layout */
+.login-pf-page {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Content wrapper */
+#kc-content-wrapper {
+    width: 100%;
+    padding: 10px 20px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Sign In button */
+#kc-login {
+    background: #1e90ff !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 12px 18px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins', sans-serif !important;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25) !important;
+    width: auto !important;
+}
+
+#kc-login:hover {
+    background: #0b74d1 !important;
+}
+
+#kc-login:active {
+    background: #085a9e !important;
+}
+
+/* Form buttons */
+#kc-form-buttons {
+    display: flex !important;
+    justify-content: center !important;
+    font-family: 'Poppins', sans-serif !important;
+}

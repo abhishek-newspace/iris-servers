@@ -1,0 +1,189 @@
+services:
+  # -------------------------------------------------
+  # MQTT BROKER: Mosquitto (mTLS enabled)
+  # -------------------------------------------------
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    restart: unless-stopped
+    ports:
+      - "8883:8883"
+      - "9001:9001"
+    volumes:
+      - ./infra/mosquitto/config:/mosquitto/config
+      - ./infra/mosquitto/certs:/mosquitto/certs:ro
+      - ./infra/mosquitto/data:/mosquitto/data
+    environment:
+      - TZ=Asia/Kolkata
+    entrypoint: []
+    command: ["mosquitto", "-c", "/mosquitto/config/mosquitto.conf"]
+    networks:
+      - iris
+
+
+  # -------------------------------------------------
+  # FASTAPI BACKEND (Your pushed image)
+  # -------------------------------------------------
+  api-service:
+    image: iris_backend-web   # <---- Use your pushed image here
+    container_name: api-service
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./certs:/app/certs        # Persist robot certs
+      - ./db:/app/db              # Persist DB (if SQLite or cert DB)
+    depends_on:
+      mosquitto:
+        condition: service_started
+    networks:
+      - iris
+
+
+  # -------------------------------------------------
+  # BACKGROUND WORKER (ARQ)
+  # -------------------------------------------------
+  # worker:
+  #   image: abhishekredant/api-server:latest   # same image as api-service
+  #   container_name: worker
+  #   command: arq app.core.worker.settings.WorkerSettings
+  #   restart: unless-stopped
+  #   env_file:
+  #     - .env
+  #   depends_on:
+  #     - db
+  #     - redis
+  #   volumes:
+  #     - ./certs:/app/certs
+  #     - ./db:/app/db
+  #   networks:
+  #     - iris
+
+
+  # -------------------------------------------------
+  # POSTGRES DATABASE
+  # -------------------------------------------------
+  db:
+    image: postgres:13
+    container_name: postgres
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - iris
+
+
+  # -------------------------------------------------
+  # REDIS CACHE + QUEUE
+  # -------------------------------------------------
+  # redis:
+  #   image: redis:alpine
+  #   container_name: redis
+  #   restart: unless-stopped
+  #   volumes:
+  #     - redis-data:/data
+  #   networks:
+  #     - iris
+
+
+  # -------------------------------------------------
+  # PGADMIN
+  # -------------------------------------------------
+  pgadmin:
+    container_name: pgadmin4
+    image: dpage/pgadmin4:latest
+    restart: always
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    env_file:
+      - .env
+    depends_on:
+      - db
+    networks:
+      - iris
+
+
+  # -------------------------------------------------
+  # KEYCLOAK
+  # -------------------------------------------------
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.4.5
+    container_name: keycloak
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./keycloak/kcthemes/themes:/opt/keycloak/themes
+    command:
+      - start-dev
+      - --spi-theme-cache-themes=false
+      - --spi-theme-cache-templates=false
+      - --spi-theme-static-max-age=-1
+    networks:
+      - iris
+
+
+  # -------------------------------------------------
+  # LOKI LOGS
+  # -------------------------------------------------
+  loki:
+    image: grafana/loki:2.9.3
+    container_name: loki
+    restart: unless-stopped
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/config.yaml
+    volumes:
+      - ./loki-config.yaml:/etc/loki/config.yaml:ro
+      - loki_data:/loki
+    networks:
+      - iris
+
+
+  # -------------------------------------------------
+  # GRAFANA DASHBOARDS
+  # -------------------------------------------------
+  grafana:
+    image: grafana/grafana:10.2.3
+    container_name: grafana
+    user: "472:472"
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana_data:/var/lib/grafana
+      - ./grafana_dash:/etc/grafana/provisioning:ro
+    networks:
+      - iris
+
+
+# -------------------------------------------------
+# VOLUMES
+# -------------------------------------------------
+volumes:
+  mosquitto_data:
+  redis-data:
+  postgres-data:
+  pgadmin-data:
+  loki_data:
+  grafana_data:
+
+# -------------------------------------------------
+# NETWORK
+# -------------------------------------------------
+networks:
+  iris:
+    external: true

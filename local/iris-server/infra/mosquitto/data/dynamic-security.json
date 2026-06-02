@@ -1,0 +1,278 @@
+{
+	"changeIndex":	90,
+	"defaultACLAccess":	{
+		"publishClientSend":	false,
+		"publishClientReceive":	true,
+		"subscribe":	false,
+		"unsubscribe":	true
+	},
+	"clients":	[{
+			"username":	"3b8d14f9a2c6e705",
+			"roles":	[]
+		}, {
+			"username":	"admin",
+			"textname":	"Admin user",
+			"roles":	[{
+					"rolename":	"super-admin"
+				}, {
+					"rolename":	"sys-observe"
+				}, {
+					"rolename":	"topic-observe"
+				}],
+			"encoded_password":	"$7$1000$3P9XJwaeVtnNnLplgw+DNyibUA4UcnvRCr9BXqAC0HyGDdROZg8CWqtyiDdS9DdwX2KDLviZYq87PL8Wx6sX8w==$ORddFn0bgrs/jCweS4LdZ238sq2ekmDGEDPEPvm3AlHQXRfbeP8NB1ijziP0VX1i2oL6m4IdcyDRrbYvHB/zxw=="
+		}, {
+			"username":	"bootstrap",
+			"roles":	[{
+					"rolename":	"bootstrap"
+				}]
+		}, {
+			"username":	"e5a92ea5a2bfe793",
+			"roles":	[]
+		}, {
+			"username":	"f6a92ea5a2bfe697",
+			"roles":	[]
+		}, {
+			"username":	"server",
+			"roles":	[{
+					"rolename":	"backend-service"
+				}]
+		}],
+	"groups":	[{
+			"groupname":	"robots",
+			"roles":	[{
+					"rolename":	"robot"
+				}],
+			"clients":	[{
+					"username":	"3b8d14f9a2c6e705"
+				}, {
+					"username":	"e5a92ea5a2bfe793"
+				}, {
+					"username":	"f6a92ea5a2bfe697"
+				}]
+		}, {
+			"groupname":	"unauthenticated",
+			"textname":	"Unauthenticated group",
+			"textdescription":	"If unauthenticated access is allowed, this group can be used to define roles for clients that connect without a password.",
+			"roles":	[],
+			"clients":	[]
+		}],
+	"anonymousGroup":	"unauthenticated",
+	"roles":	[{
+			"rolename":	"backend-service",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientSend",
+					"topic":	"$CONTROL/dynamic-security/v1",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"$CONTROL/dynamic-security/v1/response/#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"bootstrap",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"robots/bootstrap/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientSend",
+					"topic":	"robots/%c/csr",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientSend",
+					"topic":	"robots/%c/cert/ack",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"robots/bootstrap/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"robots/%c/cmd/cert/activate",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"robots/%c/cert/install",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"broker-admin",
+			"textdescription":	"Grants access to administer general broker configuration.",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"$CONTROL/broker/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientReceive",
+					"topic":	"$CONTROL/broker/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"$CONTROL/broker/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"$CONTROL/broker/#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"client",
+			"textdescription":	"Read/write access to the full application topic hierarchy.",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientReceive",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"dynsec-admin",
+			"textdescription":	"Grants access to administer clients/groups/roles.",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"$CONTROL/dynamic-security/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientReceive",
+					"topic":	"$CONTROL/dynamic-security/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"$CONTROL/dynamic-security/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"$CONTROL/dynamic-security/#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"robot",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"robots/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"robots/#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"super-admin",
+			"textdescription":	"Grants access to administer all kind of broker controls",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"$CONTROL/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"publishClientReceive",
+					"topic":	"$CONTROL/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"$CONTROL/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"$CONTROL/#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"sys-notify",
+			"textdescription":	"Allow bridges to publish connection state messages.",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientSend",
+					"topic":	"$SYS/broker/connection/%c/state",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"sys-observe",
+			"textdescription":	"Observe the $SYS topic hierarchy.",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientReceive",
+					"topic":	"$SYS/#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"$SYS/#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}, {
+			"rolename":	"topic-observe",
+			"textdescription":	"Read only access to the full application topic hierarchy.",
+			"allowwildcardsubs":	true,
+			"acls":	[{
+					"acltype":	"publishClientReceive",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"subscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}, {
+					"acltype":	"unsubscribePattern",
+					"topic":	"#",
+					"priority":	0,
+					"allow":	true
+				}]
+		}]
+}

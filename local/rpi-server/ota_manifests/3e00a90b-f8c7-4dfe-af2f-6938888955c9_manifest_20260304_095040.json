@@ -1,0 +1,17 @@
+{
+  "package_id": "3e00a90b-f8c7-4dfe-af2f-6938888955c9",
+  "package_name": "example_package",
+  "created_at": "2026-03-04T05:40:29.988006Z",
+  "package_checksum": "a1955e3eac5970f4a4a691b310771a4b335cc64c112248f8176385c1925a0129",
+  "firmwares": [
+    {
+      "install_order": 1,
+      "firmware_id": "294da46a-769b-4e5e-bb59-aed5b2541392",
+      "name": "example_firmware",
+      "version": "v2",
+      "image": "itstheabhiii1234/iris-backend@7872b855ce02fda203b29fb4bf147481bff4758f43d61c852c58f01d8d409465",
+      "digest": "7872b855ce02fda203b29fb4bf147481bff4758f43d61c852c58f01d8d409465",
+      "is_mandatory": false
+    }
+  ]
+}

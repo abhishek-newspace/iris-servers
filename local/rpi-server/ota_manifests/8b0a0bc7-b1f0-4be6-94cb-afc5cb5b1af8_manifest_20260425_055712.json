@@ -1,0 +1,17 @@
+{
+  "package_id": "8b0a0bc7-b1f0-4be6-94cb-afc5cb5b1af8",
+  "package_name": "navigation-module-stable",
+  "created_at": "2026-04-25T05:53:40.498806Z",
+  "package_checksum": "1910706d7cbf109e182f149d7008067286d61223f110faf01ca519eb752aba6c",
+  "firmwares": [
+    {
+      "install_order": 1,
+      "firmware_id": "de605778-73b3-455e-9d2f-1d028801cb77",
+      "name": "UGV-T40 Alfred",
+      "version": "v1.2.63",
+      "image": "itstheabhiii1234/ros-app:v1",
+      "digest": "fce2c01aca056959c07e14190b5ace2c97c947cbe9d6f34dab284e495af06b6a",
+      "is_mandatory": false
+    }
+  ]
+}
