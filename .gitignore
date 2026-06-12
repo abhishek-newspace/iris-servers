@@ -1,0 +1,81 @@
+# Ignore manifest files (OTA/manifests and similar)
+*manifest*.json
+*_manifest*.json
+manifest.json
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+ENV/
+.env
+.env.*
+pip-wheel-metadata/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+logs/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+*.old
+
+# Database / data dumps / caches
+db/
+data/
+*/db/
+*.sqlite
+*.sqlite3
+coverage/
+htmlcov/
+
+# Certificates, keys, and private data
+certs/
+pki-data/
+pki/
+*.pem
+*.key
+*.crt
+
+# Docker overrides and local compose files
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# Promtail / Prometheus runtime state
+promtail-positions/
+promtail/positions.yaml
+
+# Grafana runtime data
+grafana_data/
+
+# Misc
+*.pid
+*.seed
+*.cache
