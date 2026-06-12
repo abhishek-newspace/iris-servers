@@ -1,0 +1,37 @@
+services:
+  pki-server:
+    container_name: pki-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    user: "1000:1000"
+
+    environment:
+      PKI_BASE_PATH: /pki
+      PKI_PORT: 9000
+      ADMIN_API_KEYS: backend-secret-key,admin-secret-key
+      TZ: UTC
+
+    volumes:
+      - ./pki-data:/pki
+
+    ports:
+      - "9000:9000"
+
+    restart: unless-stopped
+
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+
+    tmpfs:
+      - /tmp
+
+    networks:
+      - iris
+
+networks:
+  iris:
+    external: true
