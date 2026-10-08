@@ -1,0 +1,12 @@
+.env 
+/ota_manifests
+/promtail-positions
+/robot_identity
+/ros_logs
+/db
+/certs
+/promtail
+entrypoint.sh
+prometheus.yml
+promtail-config.yaml
+*.pem
