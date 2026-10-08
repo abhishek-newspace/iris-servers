@@ -1,9 +1,0 @@
-{
-    "Helios": {
-        "name": "Alfred Helios",
-        "version": "v2.0.0",
-        "image": "10.10.60.250:5000/alfred-helios:latest",
-        "updated_at": "2026-06-05T09:11:39.678275",
-        "pending_reboot": true
-    }
-}
