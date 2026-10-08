@@ -1,0 +1,17 @@
+services:
+  rpi:
+    image: rpi_client:latest
+    # platform: linux/arm64
+    container_name: rpi
+    ports:
+      - "8001:8000"
+      - "8002:8002"
+    env_file:
+      - .env
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${CERTS_PATH}:/app/certs
+      - ${MAPPER_DIR}:/app/mapping
+      - ${PRIVATE_KEY_DIR}:/app/keys/jwt_private_key.pem:ro
+      - ${OTA_MANIFEST_DIR}:/app/ota_manifests 
+    restart: unless-stopped

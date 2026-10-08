@@ -1,0 +1,11 @@
+{
+  "telematics": {
+    "current": "TELEMATICS_CURRENT_VERSION",
+    "previous": "TELEMATICS_PREVIOUS_VERSION"
+  },
+  "OBD": {
+    "current": "OBD_CURRENT_VERSION",
+    "previous": "OBD_PREVIOUS_VERSION"
+  },
+  "main-compute-firmwares": ["vision","atlas"]
+}
