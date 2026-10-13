@@ -10,3 +10,4 @@ entrypoint.sh
 prometheus.yml
 promtail-config.yaml
 *.pem
+docker-compose-telematics.yml
